@@ -6,11 +6,19 @@ namespace Simplicidade.Nativo
 {
     public partial class App : Application
     {
+        public static bool IsUserLoggedIn { get; set; }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            if (!IsUserLoggedIn)
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
         }
 
         protected override void OnStart()

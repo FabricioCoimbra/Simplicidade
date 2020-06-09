@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Simplicidade.Nativo.LoginPage">
+    <ContentPage.Content>
+        <StackLayout 
+            VerticalOptions="CenterAndExpand"  
+            HorizontalOptions="CenterAndExpand">
+            <Label Text="Olá, Eu sou a Login Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Usuário" />
+            <Entry x:Name="UsuarioEntry" Placeholder="Usuário" />
+            <Label Text="Senha" />
+            <Entry x:Name="SenhaEntry" IsPassword="true" />
+            <Button Text="Login" Clicked="OnLoginButtonClicked" />
+            <Label x:Name="AvisoErroSucesso" TextColor="#E80C0C" />
+            <Label Text="Manter Conectado" />
+            <CheckBox x:Name="checkBox" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

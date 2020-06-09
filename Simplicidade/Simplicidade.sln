@@ -4,20 +4,42 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Web", "Simplicidade.Web\Simplicidade.Web.csproj", "{9C1F7428-C249-44E8-8FB0-C13B903CECD7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E} = {7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}
+		{0B88B8B7-5EEB-4C08-8FC3-39970A32021B} = {0B88B8B7-5EEB-4C08-8FC3-39970A32021B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.API", "Simplicidade.API\Simplicidade.API.csproj", "{0B88B8B7-5EEB-4C08-8FC3-39970A32021B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E} = {7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Compartilhada", "Simplicidade.Compartilhada\Simplicidade.Compartilhada.csproj", "{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Nativo.UWP", "Simplicidade.Nativo\Simplicidade.Nativo.UWP\Simplicidade.Nativo.UWP.csproj", "{FAC77B11-D2CD-49C9-AD8E-8DC22FF1EA79}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E} = {7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Nativo.Android", "Simplicidade.Nativo\Simplicidade.Nativo.Android\Simplicidade.Nativo.Android.csproj", "{DDF7DB31-8379-4B70-A875-AEE9B5762921}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E} = {7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Nativo.iOS", "Simplicidade.Nativo\Simplicidade.Nativo.iOS\Simplicidade.Nativo.iOS.csproj", "{217B226B-BF78-4712-9802-2A1EBB173E26}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E} = {7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Nativo", "Simplicidade.Nativo\Simplicidade.Nativo\Simplicidade.Nativo.csproj", "{433455C6-4829-4357-8B4B-17D33275C14B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplicidade.Teste", "Simplicidade.Teste\Simplicidade.Teste.csproj", "{9C8F58F6-5E38-412D-91AE-28EF41C1BD06}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C1F7428-C249-44E8-8FB0-C13B903CECD7} = {9C1F7428-C249-44E8-8FB0-C13B903CECD7}
+		{7DAF4C52-FFF0-4EA7-91F4-A63E3191431E} = {7DAF4C52-FFF0-4EA7-91F4-A63E3191431E}
+		{0B88B8B7-5EEB-4C08-8FC3-39970A32021B} = {0B88B8B7-5EEB-4C08-8FC3-39970A32021B}
+		{433455C6-4829-4357-8B4B-17D33275C14B} = {433455C6-4829-4357-8B4B-17D33275C14B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
